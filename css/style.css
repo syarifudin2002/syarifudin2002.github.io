@@ -1,0 +1,135 @@
+
+  /* Mengatur gaya dasar untuk elemen body */
+.body {
+  justify-content: center;
+  align-items: center;
+  background-image: url(""); /* Ganti dengan path dan nama file gambar latar belakang */
+  background-size: cover;
+  background-position: center;
+}
+
+   
+  .navbar-nav {
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+  }
+  .nav-item {
+    margin: 0 20px; /* Adjust the margin as needed */
+  }
+  .form-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px; /* Adjust the padding as needed */
+    margin: 0 auto;
+    max-width: 800px; /* Adjust the max-width as needed */
+    border: 1px solid #ccc; /* Optional: add a border for better visibility */
+    border-radius: 10px; /* Optional: add border radius for rounded corners */
+    background-color: #f9f9f9; /* Optional: change background color */
+}
+
+.form-column {
+    flex: 1;
+    padding: 10px;
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    width: 150px; /* Adjust width to align labels */
+    margin-right: 10px; /* Space between label and input */
+}
+
+.form-group input, 
+.form-group select {
+    flex: 1;
+    padding: 5px; /* Adjust padding as needed */
+    border: 1px solid #ccc; /* Add border for inputs */
+    border-radius: 5px; /* Rounded corners for inputs */
+}
+
+/* Mengatur gaya untuk button */
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+
+  /* Mengatur gaya untuk notifikasi */
+
+.notification {
+    position: fixed;
+    top: 60px; /* mengatur jarak antara navbar dan notifikasi */
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Shadow pada notifikasi */
+    z-index: 9999;
+  }
+  .notification.success {
+    background-color: #007bff;
+    color: #fff;
+}
+.notification.error {
+    background-color: #ff0000;
+    color: #fff;
+  }  
+  
+/* Mengatur gaya untuk tabel */
+.card-body {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    table-layout: fixed; /* Membatasi lebar tabel */
+    font-size: 12px;
+  }
+  
+  .th {
+    background-color: #007bff;
+    color: white;
+  }
+
+  /* mengatur form pencarian di table daftar penrima */
+
+
+.search-form input[type="text"] {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px 5px 5px 5px;
+  outline: none;
+}
+
+.search-form .search-button {
+  padding: 1px;
+  background-color: #007bff;
+  border: 1px solid #007bff;
+  border-radius: 5px 5px 5px 5px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.search-form .search-button:hover {
+  background-color: #0056b3;
+}
+
+
